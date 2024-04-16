@@ -1,0 +1,13 @@
+.myClass{
+    background: url("img/header_bg.jpg") no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+#myPadding{
+    padding-top: 4rem;
+}
+span{
+    background-color: rgba(46, 0, 0, 0.6);
+    color: #fff;
+    padding: 3px;
+}

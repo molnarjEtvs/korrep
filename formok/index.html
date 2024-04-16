@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    
+
+    <form action="index.html" method="post" enctype="multipart/form-data" autocomplete="off">
+        <label for="nev">A neved:</label>
+        <input type="text" name="nev" id="nev" maxlength="10" placeholder="pl.: Gipsz Jakab" value="" required>
+
+        <label for="fajlom">Válassz egy fájlt</label>
+        <input type="file" name="fajlom" id="fajlom" >
+
+        <label for="eletkor">Add meg az életkorod:</label>
+        <input type="number" name="eletkor" id="eletkor" min="10" max="100" step="2">
+
+        <label for="email">Add meg az email címed:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="jelszo">Add meg a jelszavad:</label>
+        <input type="password" name="jelszo" id="jelszo">
+        <hr>
+        <input type="radio" name="nem" value="fiu" id="fiu" checked> <label for="fiu">Fiú</label>
+        <input type="radio" name="nem" value="lany" id="lany"> <label for="lany">Lány</label>
+        <input type="radio" name="nem" value="egyeb" id="egyeb" disabled> <label for="egyeb">Egyéb</label>
+
+        <hr>
+        <label for="vegzettseg">Legmagasabb iskolai végzettség:</label>
+        <select name="vegzettseg" id="vegzettseg">
+            <option value="altalanos">8 általános</option>
+            <option value="erett" selected>Érettségi</option>
+            <option value="egyetem">Egyetem</option>
+        </select>
+
+        <hr>
+        <input type="checkbox" name="aszf" id="aszf"> 
+        <label for="aszf">Elfogadom az ÁSZF-et</label>
+
+        <hr>
+
+        <label for="tortenet">Életed története:</label>
+        <textarea name="tortenet" id="tortenet" cols="30" rows="10"></textarea>
+
+        <hr>
+
+        <label for="szulido">Születési idő:</label>
+        <input type="datetime-local" name="szulido" id="szulido">
+
+        <button type="submit">Küldés</button>
+
+    </form>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
